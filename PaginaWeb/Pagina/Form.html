@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("Header.html"); 
+        });
+    </script>
+</head>
+
+
 <head>
     <link rel="stylesheet" type="text/css" href="styles/Form.css">
     <meta charset="UTF-8">
@@ -10,6 +21,10 @@
 </head>
 <body>
 
+    <div id="header"></div>
+
+    <!-- Resto del contenido de la página -->
+    
     <div class="Contacto">
 
         <div class="Iconos">
@@ -39,7 +54,7 @@
     
             </form>
             
-            <button type="button"><a href="Main.html">Regresar</a></button>
+            <button type="button"><a href="Index.html">Regresar</a></button>
     
             
         </div>

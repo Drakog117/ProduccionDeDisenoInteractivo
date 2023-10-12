@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Botón interactivo */
+.boton {
+    margin: 5%;
+    display: flex;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  
+
+    border-radius: 10px;
+}
+
+.boton:hover {
+    background-color: #5f015f;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    box-sizing: border-box;
+    box-shadow: #000;
+}
+
+
+
+.barra-de-carga {
+    margin: 5%;
+    width: 100%;
+    height: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+.progreso {
+   
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 10px;
+    
+    animation: llenar 3s linear infinite;
+}
+
+@keyframes llenar {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+
+
+
+/* Tarjeta */
+.tarjeta {
+    margin: 5%;
+    width: 300px;
+    border: none;
+    transition-duration: 0.4s;
+    align-items: center;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de;
+}
+

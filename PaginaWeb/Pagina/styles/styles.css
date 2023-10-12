@@ -1,0 +1,65 @@
+
+/* Estilos para el header */
+#header {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2b2a2a; /* Color de fondo oscuro */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px; /* Espacio reducido en la parte superior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alineación de elementos al inicio */
+    color: #C5C5C5; /* Color de texto claro */
+    font-family: 'Consolas', monospace; /* Fuente similar a la de Visual Studio Code */
+}
+
+
+
+/* Estilos para la imagen del encabezado */
+#header img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espacio adicional debajo de la imagen */
+}
+
+/* Estilos para los enlaces del encabezado */
+#header ul {
+
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 30%; /* Espacio adicional en la parte superior de la lista */
+}
+
+#header ul li {
+    margin-bottom: 20px; /* Espacio adicional entre los elementos de la lista */
+    
+  
+}
+
+#header ul li a {
+    color: #C5C5C5; /* Color de enlace claro */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+#header ul li:hover {
+    
+    display:inline-block;
+    outline: 2px dotted #00FF00; /* Rectángulo punteado al pasar el mouse */
+}
+
+#header ul li a:hover {
+    color: #00FF00;
+}
+
+#Icon i{
+    margin-inline: 5px;
+}

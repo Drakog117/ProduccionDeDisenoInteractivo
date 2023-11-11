@@ -1,0 +1,24 @@
+let caracter = 'b';
+let accion;
+
+switch (caracter) {
+    case 'a':
+        accion = 'Agregar contacto';
+        break;
+    case 'b':
+        accion = 'Buscar contacto';
+        break;
+    case 'c':
+        accion = 'Copiar contacto';
+        break;
+    case 'd':
+        accion = 'Eliminar contacto';
+        break;
+    case 'e':
+        accion = 'Salir';
+        break;
+    default:
+        accion = 'Opción no válida';
+}
+
+console.log(accion);

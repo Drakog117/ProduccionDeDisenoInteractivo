@@ -1,0 +1,161 @@
+
+/* Estilos para el header */
+#header {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2b2a2a; /* Color de fondo oscuro */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px; /* Espacio reducido en la parte superior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alineación de elementos al inicio */
+    color: #C5C5C5; /* Color de texto claro */
+    font-family: 'Consolas', monospace; /* Fuente similar a la de Visual Studio Code */
+}
+
+
+
+/* Estilos para la imagen del encabezado */
+#header img {
+   
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Espacio adicional debajo de la imagen */
+}
+
+/* Estilos para los enlaces del encabezado */
+#header ul {
+
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 30%; /* Espacio adicional en la parte superior de la lista */
+}
+
+#header ul li {
+    margin-bottom: 20px; /* Espacio adicional entre los elementos de la lista */
+    
+  
+}
+
+#header ul li a {
+    color: #C5C5C5; /* Color de enlace claro */
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+#header ul li:hover {
+    
+    display:inline-block;
+    outline: 2px dotted #00FF00; /* Rectángulo punteado al pasar el mouse */
+}
+
+#header ul li a:hover {
+    color: #00FF00;
+}
+
+#Icon i{
+    margin-inline: 5px;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+
+    @media screen and (max-width: 427px) {
+
+        #header {
+            width: 100%;
+            height: 15%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #2b2a2a; /* Color de fondo oscuro */
+        }
+    
+        #header img {
+            width: 20%;
+            /* Espacio adicional debajo de la imagen */
+        }
+    
+        nav ul {
+            display: none;
+            position: fixed;
+            top: 0;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        .nav-toggle {
+            display: block;
+            cursor: pointer;
+            position: absolute;
+            right: 10%;
+            top: 35%;
+            font-size: 24px;
+            line-height: 24px;
+            
+        }
+    
+        /* Mostrar el menú cuando el botón de hamburguesa está activo */
+        
+        
+        .nav-toggle.active + .Menu ul {
+            display: list-item;
+            background-color: #2b2a2a;
+            margin-bottom: 10px;
+            
+          }
+          
+          .nav-toggle.active + .Menu #Icon {
+            margin-top: 10px;
+           
+          }
+          
+          .nav-toggle.active + .Menu #Icon i {
+            margin-bottom: 15px;
+            font-size: 20px;
+            margin:auto;
+            margin-inline: 6px;
+          }
+          
+    
+        .Menu ul li {
+            margin-top: 15px;
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+    
+  
+/* Estilos para la animación de desplazamiento al centro */
+@keyframes slideToCenter {
+    0% {
+        transform:  translateY(25vw);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+
+    
+    
+}
+
+.center-animation {
+    animation: slideToCenter 2s ease-in-out forwards;
+}

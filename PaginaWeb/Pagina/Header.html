@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/Header.css">
     <script src="https://kit.fontawesome.com/9b5b9b93f4.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
 
-<input type="checkbox" id="check">
-<label for="check" id="arrow">←</label>
-
 <header>
-    <div id="header">
-        <img src="/Pagina/Imagenes/Logo.png" alt="Imagen del encabezado">    <ul>
-            <li><a href="pagina1.html">Yo</a></li>
-            <li><a href="pagina2.html">Proyectos</a></li>
-            <li><a href="pagina3.html">Currículum</a></li>
-     
-        </ul>
     
-        <div id="Icon">
-            <ul>
-                <i><a href="Form.html"><i class="fa-brands fa-linkedin-in" style="color: #4CAF50;"></i></i>
-                <i><a href="Form.html"><i class="fa-brands fa-github" style="color: #4CAF50;"></i></i>
-                <i><a href="Form.html"><i class="fa-solid fa-address-book" style="color: #4CAF50;"></i></i>
-        
-            </ul>
+        <div class="logo">
+            <div  class="logo center-animation">
+        <img src="../Pagina/Imagenes/Logo.png" alt="Imagen del encabezado">    
+            </div>
+            
         </div>
-    </div>
+
+        <div class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        
+        <nav class="Menu">
+            <ul>
+                <li><a href="Index.html">Yo</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="pagina2.html">Proyectos</a></li>
+                <li><a href="pagina3.html">Currículum</a></li>
+         
+            </ul>
+
+            <div id="Icon">
+                <ul>
+                    <i><a href="Form.html"><i class="fa-brands fa-linkedin-in" style="color: #4CAF50;"></i></i>
+                    <i><a href="Form.html"><i class="fa-brands fa-github" style="color: #4CAF50;"></i></i>
+                    <i><a href="Form.html"><i class="fa-solid fa-address-book" style="color: #4CAF50;"></i></i>
+            
+                </ul>
+            </div>
+        </nav>
+    
+       
+    
 </header>
 
 
+<script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const menu = document.querySelector(".Menu ul");
 
+    navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+    });
+</script>
 
+<script>
+   window.addEventListener("load", function () {
+        const logo = document.querySelector(".logo");
 
+        // Espera un momento (por ejemplo, 2 segundos) antes de revertir la animación
+        setTimeout(() => {
+            logo.classList.remove("center-animation"); // Elimina la clase que aplicó la animación
+        }, 2000); // Ajusta el tiempo según tus necesidades
+    });
+</script>
 
 </body>
 </html>

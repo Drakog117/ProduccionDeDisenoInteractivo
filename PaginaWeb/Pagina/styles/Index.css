@@ -1,0 +1,66 @@
+/* Estilos para el cuerpo de la página */
+body {
+    
+    position: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2b2a2a; /* Color de fondo oscuro */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px; /* Espacio reducido en la parte superior */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alineación de elementos al inicio */
+    color: #C5C5C5; /* Color de texto claro */
+    font-family: 'Consolas', monospace; /* Fuente similar a la de Visual Studio Code */
+    background-color: #0E1419;
+    margin-left: 15%; /* Asegura que el cuerpo no se superponga con el encabezado */
+}
+
+/* Estilos para los elementos con la clase .data */
+.data {
+    flex: 1;
+}
+
+/* Estilos para la imagen del encabezado */
+.foto img {
+    position: relative;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20%;
+}
+
+/* Estilos para los elementos con la clase .datos */
+.datos {
+    margin-top: 10%;
+    text-align: center;
+}
+
+/* Estilos para los párrafos dentro de .datos */
+.datos p {
+    line-height: 3.5;
+    color: #C5C5C5;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+body .lenguajes{
+   
+    flex:1;
+    
+}
+
+.banner img{
+    position: relative;
+    width: 100%;
+    margin-right: 10%;
+    margin-top: 10%;
+    
+}
+
+.descriopcion p{
+    text-align: justify;
+}

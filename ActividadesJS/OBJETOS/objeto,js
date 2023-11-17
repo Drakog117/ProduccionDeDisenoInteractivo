@@ -1,0 +1,18 @@
+// Sintaxis:
+// let obejetoliteral = {
+//     clave:visualViewport;
+//     clave: function name(parms){//Metodo
+//     }
+// }
+
+// Ejemplo:
+
+// let libro = {
+//     titulo: "Cien anos de soledad",
+//     autor: "Gabriel Garcia Marquez",
+//     anlo: 1967,
+//     Disponible: true,
+    
+//     }
+
+//     console.log(libro.disponible);

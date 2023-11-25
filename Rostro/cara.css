@@ -1,0 +1,32 @@
+svg {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .rostro {
+    fill: green;
+  }
+  
+  .ojo {
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
+  }
+  
+  .boca {
+    fill: purple;
+  }
+  
+  .ceja {
+    stroke: pink;
+    stroke-width: 5px;
+  }
+  
+  .pupila {
+    fill: black;
+    stroke: none;
+  }
+  .pupila {
+    fill: linear-gradient(to bottom, black 0%, transparent 100%);
+  }
+    
